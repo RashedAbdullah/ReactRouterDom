@@ -1,28 +1,33 @@
 import {createBrowserRouter} from 'react-router-dom';
 import MainLayout from '../Layouts/MainLayout';
+import Home from '../Pages/Home';
+import Projects from '../Pages/Projects';
+import Contacts from '../Pages/Contacts';
+import Blogs from '../Pages/Blogs';
+import About from '../Pages/About';
 const RoutingPgaes = createBrowserRouter([{
     path: "/",
     element: <MainLayout />,
     children:[
         {
             path: "/",
-            element: <h2>This is home page</h2>
+            element: <Home />
         },
         {
             path: "/project",
-            element: <h2>This is Projcet page</h2>
+            element: <Projects />
         },
         {
             path: "/contact",
-            element: <h2>This is Contact page</h2>
+            element: <Contacts />
         },
         {
             path: "/blog",
-            element: <h2>This is Blog page</h2>
+            element: <Blogs />
         },
         {
             path: "/about",
-            element: <h2>This is About page</h2>,
+            element: <About />
         },
         {
             path: "/*",
