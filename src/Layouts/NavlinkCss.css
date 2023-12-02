@@ -1,0 +1,25 @@
+.NavlinkUl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.NavlinkUl li {
+    list-style: none;
+}
+
+.active {
+    background-color: rgb(0, 82, 0);
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+.pending {
+    background-color: rgb(0, 215, 0);
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+}
